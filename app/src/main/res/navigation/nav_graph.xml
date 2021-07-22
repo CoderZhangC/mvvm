@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.wan.android.ui.fragment.home.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_mineFragment"
+            app:destination="@id/mineFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_projectFragment"
+            app:destination="@id/projectFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_squareFragment"
+            app:destination="@id/squareFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_weChatFragment"
+            app:destination="@id/weChatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.wan.android.ui.fragment.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/mineFragment"
+        android:name="com.wan.android.ui.fragment.home.MineFragment"
+        android:label="fragment_mine"
+        tools:layout="@layout/fragment_mine" />
+    <fragment
+        android:id="@+id/projectFragment"
+        android:name="com.wan.android.ui.fragment.home.ProjectFragment"
+        android:label="fragment_project"
+        tools:layout="@layout/fragment_project" />
+    <fragment
+        android:id="@+id/squareFragment"
+        android:name="com.wan.android.ui.fragment.home.SquareFragment"
+        android:label="fragment_square"
+        tools:layout="@layout/fragment_square" />
+    <fragment
+        android:id="@+id/weChatFragment"
+        android:name="com.wan.android.ui.fragment.home.WeChatFragment"
+        android:label="fragment_we_chat"
+        tools:layout="@layout/fragment_we_chat" />
+</navigation>

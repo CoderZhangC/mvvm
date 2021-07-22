@@ -1,15 +1,15 @@
-package com.wan.android
+package com.wan.android.ui.activity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.wan.android.databinding.ActivitySplashBinding
-import com.wan.base.util.setVisibleOrGone
+import com.wan.android.R
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-        val binding = ActivitySplashBinding.inflate(layoutInflater)
-        binding.root.setVisibleOrGone(true)
+        startActivity(Intent(this, MainActivity::class.java))
+        finish()
     }
 }

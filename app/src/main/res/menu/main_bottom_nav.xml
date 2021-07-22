@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_home"
+        android:icon="@mipmap/menu_main"
+        android:title="@string/title_main" />
+
+    <item
+        android:id="@+id/action_project"
+        android:icon="@mipmap/menu_project"
+        android:title="@string/title_project" />
+
+    <item
+        android:id="@+id/action_square"
+        android:icon="@mipmap/menu_tree"
+        android:title="@string/title_square" />
+
+    <item
+        android:id="@+id/action_we_chat"
+        android:icon="@mipmap/menu_public"
+        android:title="@string/title_we_chat" />
+
+    <item
+        android:id="@+id/action_mine"
+        android:icon="@mipmap/menu_me"
+        android:title="@string/title_mine" />
+
+</menu>
