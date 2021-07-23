@@ -6,16 +6,19 @@
 
     </data>
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
+        android:orientation="vertical"
         android:layout_height="match_parent"
         tools:context="com.wan.android.ui.fragment.home.HomeFragment">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:text="home" />
+        <include
+            android:id="@+id/include_base_bar"
+            layout="@layout/base_bar" />
 
-    </FrameLayout>
+        <include
+            android:id="@+id/include_layout_list"
+            layout="@layout/common_refresh_list" />
+
+    </LinearLayout>
 </layout>

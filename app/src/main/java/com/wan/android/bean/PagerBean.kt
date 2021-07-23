@@ -12,4 +12,16 @@ data class PagerBean<T>(
     val pageCount: Int,
     val size: Int?,
     val total: Int
-)
+) {
+    fun isEmpty():Boolean = datas.isEmpty()
+
+    /**
+     * 是否为刷新
+     */
+    fun isRefresh() = offset == 0
+
+    /**
+     * 是否还有更多数据
+     */
+    fun hasMore() = !over
+}
